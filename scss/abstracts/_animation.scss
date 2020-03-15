@@ -1,0 +1,39 @@
+.animate-out {
+  animation: out 600ms ease-in-out forwards;
+}
+
+.animate-in {
+  animation: in 500ms ease-in-out forwards;
+  display: block;
+}
+
+.animate-up {
+  transform: translateY(-500px) rotate(30deg);
+}
+
+@keyframes out {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  60% {
+    transform: rotate(60deg);
+  }
+  100% {
+    transform: translateY(800px) rotate(10deg);
+  }
+}
+
+@keyframes in {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
