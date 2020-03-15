@@ -57,9 +57,9 @@ $(".rerun-button").click(function() {
 
   $(".modal-header span")
     .first()
-    .add("is-active");
-  // .siblings()
-  // .removeClass("is-active");
+    .add("is-active")
+    .siblings()
+    .removeClass("is-active");
 
   $(this).hide();
 });
